@@ -7,18 +7,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.api.modelos.Formulario;
-import com.api.repositorio.InterfaceFormulario;
+import com.api.modelos.Practicas;
+import com.api.repositorio.Interfacepracticas;
 
 @RestController
-@RequestMapping("/Formulario")
-public class FormularioControlador {
+@RequestMapping("practicas")
+public class practicasControlador {
 
 	@Autowired
-	private InterfaceFormulario interfaceForm;
+	private Interfacepracticas interfaceForm;
 	
 	@GetMapping
-	public List<Formulario> forms(){
-		return (List<Formulario>) interfaceForm.findAll();
+	public List<Practicas> forms(){
+		return (List<Practicas>) interfaceForm.findAll();
 	}
 }

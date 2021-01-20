@@ -1,7 +1,7 @@
 package com.api.repositorio;
 
-import com.api.modelos.Formulario;
+import com.api.modelos.Practicas;
 
-public class FormularioImplementacion extends Formulario{
+public class practicasImplementacion extends Practicas{
 
 }

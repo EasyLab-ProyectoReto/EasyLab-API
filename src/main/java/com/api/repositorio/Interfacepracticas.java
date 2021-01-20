@@ -3,9 +3,9 @@ package com.api.repositorio;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.api.modelos.Formulario;
+import com.api.modelos.Practicas;
 
 @Repository
-public interface InterfaceFormulario extends CrudRepository<Formulario, Integer>{
+public interface Interfacepracticas extends CrudRepository<Practicas, Integer>{
 	
 }
